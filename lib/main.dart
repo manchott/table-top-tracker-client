@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:table_top_tracker/pages/home_page.dart';
+import 'package:table_top_tracker/screens/home_screen.dart';
 
 import 'firebase_options.dart';
 

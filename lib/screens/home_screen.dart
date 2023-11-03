@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:table_top_tracker/screens/sample_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -75,6 +76,15 @@ class _HomePageState extends State<HomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SampleScreen()), // Navigate to the second screen
+                );
+              },
+              child: Text('Go to Second Screen'),
             ),
           ],
         ),
